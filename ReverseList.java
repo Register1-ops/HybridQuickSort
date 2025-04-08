@@ -57,7 +57,7 @@ public class ReverseList {
         
         int i = low - 1;
         for (int j = low; j < high; j++) {
-            if (innerList.get(j) <= pivot) {
+            if (innerList.get(j) >= pivot) {
                 i = i + 1;
                 Swap(innerList, i, j);
             }
